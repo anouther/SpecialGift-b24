@@ -3,7 +3,7 @@
       const c = setTimeout(() => {
         document.body.classList.remove("not-loaded");
 
-        const titles = (' i have something special for you').split('');
+        const titles = ('This flower special for you.').split('');
         const titleElement = document.getElementById('title');
         let index = 0;
 
@@ -19,18 +19,12 @@
             index++;
             setTimeout(appendTitle, 300); // 300ms delay per huruf
           } else {
-            // Setelah teks utama selesai, tambahkan subtitle kecil
-           const subtitle = document.createElement('p');
-subtitle.innerHTML = 
-  "You give your all to everyone you meet,<br>" +
-  "With a heart so pure, so fiercely sweet.<br>" +
-  "For all you give, you deserve much more,<br>" +
-  "A brighter path, a kinder shore.<br>" +
-  "You're strength itself, the truest test—<br>" +
-  "The strongest soul among the best.";
-subtitle.style.fontSize = '20px';
-subtitle.style.marginTop = '2px';
-subtitle.style.color = '#fff';
+           // Setelah teks utama selesai, tambahkan subtitle kecil
+            const subtitle = document.createElement('p');
+            subtitle.innerText = "hai marsha, i'm happy to be your twins.always be happy, semoga hal-hal baik selalu beriringan denganmu, i'm the first person to be happy if you're happy.)";
+            subtitle.style.fontSize = '20px'; // Ukuran font lebih kecil
+            subtitle.style.marginTop = '2px'; // Spasi antara teks utama dan subtitle
+            subtitle.style.color = '#fff'; // Warna abu-abu untuk teks subtitle
 
             // Menambahkan subtitle di bawah #title
             titleElement.appendChild(subtitle);
